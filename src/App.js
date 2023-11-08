@@ -1,10 +1,10 @@
 import './App.css';
-import MainContainer from './components/MainContainer/MainContainer';
+import TodoApp from "./components/TodoApp/TodoApp";
 
 function App() {
     return (
         <>
-            <MainContainer/>
+            <TodoApp/>
         </>
     );
 }

@@ -10,6 +10,7 @@ function TodoApp() {
         setTodos([...todos, { text: task, completed: false }]);
     };
 
+
     const toggleTask = (index) => {
         const updatedTodos = [...todos];
         updatedTodos[index].completed = !updatedTodos[index].completed;

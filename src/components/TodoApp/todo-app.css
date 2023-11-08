@@ -5,7 +5,11 @@
 }
 
 body{
+     background: #d4ecec;
+}
+.app-container{
     display: flex;
     flex-direction: column;
-    background: #d4ecec;
+    justify-content: center;
+    align-items: center;
 }

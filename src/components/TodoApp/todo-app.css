@@ -5,11 +5,18 @@
 }
 
 body{
-     background: #d4ecec;
+    background: #838686;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .app-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 1em;
+    width: 600px;
+    height: 100vh;
+    background: #d4ecec;
 }

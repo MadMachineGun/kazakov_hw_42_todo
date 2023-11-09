@@ -4,12 +4,19 @@ import AddTask from '../../components/AddTask/AddTask';
 import './todo-app.css';
 
 function TodoApp() {
-    const [todos, setTodos] = useState([]);
+    const initialTasks = [
+        { text: 'Breakfast', completed: false },
+        { text: 'Work', completed: false },
+        { text: 'Lunch', completed: false },
+        { text: 'Work', completed: false },
+        { text: 'Dinner', completed: false },
+    ];
+
+    const [todos, setTodos] = useState(initialTasks);
 
     const addTask = (task) => {
         setTodos([...todos, { text: task, completed: false }]);
     };
-
 
     const toggleTask = (index) => {
         const updatedTodos = [...todos];

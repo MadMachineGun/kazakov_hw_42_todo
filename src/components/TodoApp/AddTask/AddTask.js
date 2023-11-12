@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './add-task.css';
 
-function AddTask({ onAddTask }) {
+export default function AddTask({ onAddTask }) {
     const [task, setTask] = useState('');
 
     const handleInputChange = (e) => {
@@ -28,4 +28,4 @@ function AddTask({ onAddTask }) {
     );
 }
 
-export default AddTask;
+

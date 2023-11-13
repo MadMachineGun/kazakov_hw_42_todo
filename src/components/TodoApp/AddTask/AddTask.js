@@ -16,10 +16,10 @@ export default function AddTask({ onAddTask }) {
     };
 
     return (
-        <div className="add-task">
+        <div className='add-task'>
             <input
-                type="text"
-                placeholder="Enter a new task"
+                type='text'
+                placeholder='Enter a new task'
                 value={task}
                 onChange={handleInputChange}
             />

@@ -16,7 +16,11 @@ export default function TodoList({todos, onToggleTask, onDeleteTask}) {
                     </span>
                     <button
                         className='delete-button'
-                        onClick={(event) => onDeleteTask(index)}>
+                        onClick={(event) => {
+                            event.stopPropagation();
+                            onDeleteTask(index);
+                        }}
+                        >
                         -
                     </button>
                 </li>
